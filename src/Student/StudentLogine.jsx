@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+
 
 export default function StudentLogine() {
     const [email, setEmail] = useState("");
@@ -8,19 +10,27 @@ export default function StudentLogine() {
     const [error, setError] = useState("");
     const navigate = useNavigate();
   
-    const handleLogin = (e) => {
+    const handleLogin = async (e) => {
       e.preventDefault();
-  
-      // Vous pouvez remplacer cette partie par une vérification réelle
-      // comme une API pour vérifier les informations de connexion.
-      if (email === "test@example.com" && password === "password123") {
-        // Si les informations sont correctes, rediriger vers une autre page
-        navigate("/dashboard");  // Remplacez "/dashboard" par la route de votre page de destination
-      } else {
-        setError("Email ou mot de passe incorrect");
+    
+      try {
+        const response = await axios.post('http://127.0.0.1:5000/login', {
+          email,
+          password
+        });
+        
+        console.log(response);
+        if (response.data.success) {
+          navigate("/dashboard");
+        } else {
+          setError(response.data.message);
+        }
+      } catch (error) {
+        console.error("Error during login:", error);
+        setError("Une erreur s'est produite. Veuillez réessayer.");
       }
-    };  
-
+    };
+    
   return (
     <div className="flex justify-center items-center h-screen p-10 ">
       <div className="grid md:grid-cols-2 grid-cols-1 border rounded-3xl">

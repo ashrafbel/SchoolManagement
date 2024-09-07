@@ -5,24 +5,24 @@ const HeroSection = () => {
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-20">
       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">
-      SupMTI | Rabat
+      TechMTI | SALE
+      
         <span className="bg-gradient-to-r from-orange-500 to-red-800 text-transparent bg-clip-text">
           {" "}
-          Reconnue par l'Etat 
+          State-Recognized
         </span>
       </h1>
       <p className="mt-10 text-lg text-center text-neutral-500 max-w-4xl">
-        Reconnue comme leader national en formation et en recherche dans le domaine d’informatique 
-        industriel, des télécommunications, de management  et des finance, 
-        le Groupe SupMTI l’Ecole Supérieure de Management, de Télécommunication et 
-        d’Informatique est considérée comme l’une des écoles pionnière en formation supérieures.
+      Recognized as a national leader in education and research in the fields of industrial computing,
+      telecommunications, management, and finance, the Groupe SupMTI, the Higher School of Management, 
+      Telecommunications, and Computing, is considered one of the pioneering institutions in higher education.
       </p>
       <div className="flex justify-center my-10">
         <a
           href="#"
           className="bg-gradient-to-r from-orange-500 to-orange-800 py-3 px-4 mx-3 rounded-md"
         >
-          Voir plus
+          SEE MORE
         </a>
         <a href="#" className="py-3 px-4 mx-3 rounded-md border">
           Documentation
