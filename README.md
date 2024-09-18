@@ -84,6 +84,7 @@ The aim of this solo project is to challenge myself by managing the entire devel
     You need to install Vite globally on your machine before running the front-end:
     ```bash
     npm install -g vite
+    npm install vite
     ```
 
 5. **Install Front-End Dependencies**:
@@ -150,7 +151,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## **Screenshots**
 
-![Dashboard Screenshot](login.jpeg)
+![Dashboard Screenshot](Home.jpeg)
 
 ---
 
