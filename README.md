@@ -150,7 +150,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## **Screenshots**
 
-![Dashboard Screenshot](screenshot1.png)
+![Dashboard Screenshot](login.jpeg)
 *A screenshot showcasing the dashboard interface for school management.*
 
 ---
